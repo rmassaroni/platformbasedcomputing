@@ -1,0 +1,5 @@
+Boomer high-five labradoodle True 
+Rocky lay-down german-shephard False 
+Daisy sit pit-bull True 
+Oscar speak dachshund False 
+Summer fetch golden-retriever True 
