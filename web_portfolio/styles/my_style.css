@@ -1,6 +1,84 @@
 h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+td {
+    border: solid;
+}
+
+/* This gets rid of bullet points */
+ul {
+    list-style-type: none;
+}
+
+a {
     color: blue;
 }
-td {
-    border
+
+body {
+    font-size: 1em;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: left;
+    width: 1000px;
+    margin: 0 auto;
 }
+
+.border {
+    border-style: solid;
+}
+
+.banner {
+    background-color: seagreen;
+    border-top: solid;
+    border-bottom: solid;
+}
+
+nav{
+    /* clear property will move the nav element on its own line and left justify */
+    clear:left;
+    padding:2em;
+    margin-left: 5em;
+}
+
+nav ul li {
+    /* float is used for positioning */
+    float: left;
+    margin-right: 0.5em;
+}
+
+nav ul li a {
+    padding: 0.25em 1em;
+    text-decoration: none; /* no underline */
+    background-color: #EBF5FF; /* pale bluish white */
+    color: #4312AE; /* font color dark blue */
+    border: 2px solid black;
+    border-top-left-radius: 1em 1em; /* rounded corner! */
+    border-top-right-radius: 1em 1em; /* another rounded corner! */
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+table {
+    border-style: solid;
+    margin: 5%;
+    margin-bottom: 20%;
+}
+
+caption {
+    font-size: 2em;
+}
+    
+td, th {
+    padding: .5em;
+    padding-right:5em;
+}
+    
