@@ -1,5 +1,5 @@
-var sol =
-   [[0, 7, 0, 2, 3, 8, 0, 0, 0],
+var sol = [
+    [0, 7, 0, 2, 3, 8, 0, 0, 0],
     [0, 0, 0, 7, 4, 0, 8, 0, 9],
     [0, 6, 8, 1, 0, 9, 0, 0, 2],
     [0, 3, 5, 4, 0, 0, 0, 0, 8],
@@ -7,7 +7,8 @@ var sol =
     [8, 0, 0, 0, 0, 5, 7, 6, 0],
     [2, 0, 0, 6, 0, 3, 1, 9, 0],
     [7, 0, 9, 0, 2, 1, 0, 0, 0],
-    [0, 0, 0, 9, 7, 4, 0, 8, 0]];
+    [0, 0, 0, 9, 7, 4, 0, 8, 0]
+];
 
 /* printBoard is the only function you need to implement.
   The values of the sudoku puzzle above should be displayed in the table in index.html
@@ -19,8 +20,13 @@ var sol =
   */
 
 var printBoard = function () {
-   
-    
+    for (var i = 0; i < 9; i++) {
+        for (var j = 0; j < 9; j++) {
+            var cellId = "r" + (i + 1) + (j + 1); // Generate cell id
+            var cellValue = sol[i][j]; // Get value from the solution array
+            document.getElementById(cellId).innerText = cellValue; // Set cell value in HTML
+        }
+    }
 };
 
 //Check if value is in the row
@@ -48,13 +54,10 @@ var isInBox = function(row, col, number) {
     r = row - row % 3;
     c = col - col % 3;
 
-    for (i = r; i < r + 3; i++) {
-        for (j = c; j < c + 3; j++) {            
-            if (sol[i][j] == number) {
+    for (i = r; i < r + 3; i++)
+        for (j = c; j < c + 3; j++)            
+            if (sol[i][j] == number)
                 return true;
-            }
-        }
-    }
     return false;
 };
 
