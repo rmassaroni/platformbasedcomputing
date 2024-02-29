@@ -20,32 +20,27 @@ var sol = [
   */
 
 var printBoard = function () {
-    for (var i = 0; i < 9; i++) {
+    for (var i = 0; i < 9; i++)
         for (var j = 0; j < 9; j++) {
-            var cellId = "r" + (i + 1) + (j + 1); // Generate cell id
-            var cellValue = sol[i][j]; // Get value from the solution array
-            document.getElementById(cellId).innerText = cellValue; // Set cell value in HTML
+            var cellId = "r" + (i + 1) + (j + 1);
+            var cellValue = sol[i][j];
+            document.getElementById(cellId).innerText = cellValue;
         }
-    }
 };
 
 //Check if value is in the row
 var isInRow = function(row, number) {    
-    for (var col = 0; col < 9; col++) {
-        if (sol[row][col] == number) {
+    for (var col = 0; col < 9; col++)
+        if (sol[row][col] == number)
             return true;
-        }
-    }
     return false;
 };
 
 //Check if value is in the column
 var isInCol = function(col, number) {    
-    for (var row = 0; row < 9; row++) {
-        if (sol[row][col] == number) {
+    for (var row = 0; row < 9; row++)
+        if (sol[row][col] == number)
             return true;
-        }
-    }     
     return false;
 };
 
