@@ -20,6 +20,13 @@ function Board({ xIsNext, squares, onPlay }) {
             return count;
         }
 
+        const good = () => alert("Good choice!");
+
+        function bad() {
+            alert("Not a good choice!");
+            return;
+        }
+
         if(xIsNext) {
             //move 1: corner
             if(squares[0] == null && squares[1] == null && squares[2] == null && squares[3] == null && squares[4] == null && squares[5] == null && squares[6] == null && squares[7] == null && squares[8] == null) {
