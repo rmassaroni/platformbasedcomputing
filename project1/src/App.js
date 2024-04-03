@@ -29,11 +29,8 @@ function Board({ xIsNext, squares, onPlay }) {
                 } else {
                     alert("Good choice!");
                 }
-            }
-            else if(xCount() == 1) {
-                // Move 2 - O is in the center
-                if (squares[4] === 'O') {
-                    // X's second move is based on where O places its first O
+            } else if(xCount() == 1) {
+                if (squares[4] === 'O') { //if O is in center
                     if(squares[0] == 'X') {
                         if(i == 8) {
                             alert("Good choice!");
@@ -66,10 +63,7 @@ function Board({ xIsNext, squares, onPlay }) {
                             return;
                         }
                     }
-                }
-
-                // Move 2 - O is NOT in the center
-                else if (squares[4] !== 'O' && squares[4] !== 'X') {
+                } else if (squares[4] !== 'O' && squares[4] !== 'X') { //If O is not in center
                     // X's second move to win if O is not in the center
                     if(squares[0] == 'X') {
                         if(i == 2 && squares[1] == null) {
