@@ -1,3 +1,6 @@
 [submodule "CSC-2053-Web-Exam-Study-Guide"]
 	path = CSC-2053-Web-Exam-Study-Guide
 	url = https://github.com/rmassaroni/CSC-2053-Web-Exam-Study-Guide
+[submodule "project3"]
+	path = project3
+	url = https://github.com/rmassaroni/novachat
