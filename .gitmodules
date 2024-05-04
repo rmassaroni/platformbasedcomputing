@@ -7,3 +7,6 @@
 [submodule "proj3"]
 	path = proj3
 	url = https://github.com/rmassaroni/novachat
+[submodule "project3"]
+	path = project3
+	url = https://github.com/rmassaroni/novachat
