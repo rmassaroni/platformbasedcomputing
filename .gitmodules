@@ -4,3 +4,6 @@
 [submodule "project2"]
 	path = project2
 	url = https://github.com/rmassaroni/movie-app
+[submodule "proj3"]
+	path = proj3
+	url = https://github.com/rmassaroni/novachat
